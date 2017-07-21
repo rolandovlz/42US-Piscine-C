@@ -1,0 +1,100 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z3r1p20.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Fri Jun 30 21:59:50 PDT 2017
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2017/piscine-c-exam00/exam_20170701/rvelez
+
+= Git history ==================================================================
+$> git -C /var/folders/84/vqy6zp8j1yz1d689y8m5l5ph0000gp/T/tmpZtV_DY/user log --pretty='%H - %an, %ad : %s'
+9d1e5f068690a170ea03959705ee48ea609f6977 - Exam 42, Fri Jun 30 21:59:35 2017 -0700 : ft_atoi.c (unfinished, only works on positive ints)
+9826316f69a78a9fb31385aacf5f2bb2db632212 - Exam 42, Fri Jun 30 21:06:26 2017 -0700 : ft_putstr done (wrong)
+40e033330debc9b05796b82f701dd4bee2acbafe - Exam 42, Fri Jun 30 20:45:11 2017 -0700 : ft_strcmp.c corrected
+a771e6cc79a08b6b18251bf0d932854be6d2d0fc - Exam 42, Fri Jun 30 20:35:42 2017 -0700 : ft_strcmp.c done
+c8eecacfb44b934f8fba8b5fa97ebc861b38bb02 - Exam 42, Fri Jun 30 19:03:56 2017 -0700 : maff_alpha.c done
+76fdf70002675dfa785ae75fa3b1b5da50da5aaf - Exam 42, Fri Jun 30 18:27:58 2017 -0700 : ft_print_numbers.c done
+1f6c84d6e07d702cc0cb42e5f54c0f3499c15881 - Exam 42, Fri Jun 30 18:16:27 2017 -0700 : only_a.c done
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/84/vqy6zp8j1yz1d689y8m5l5ph0000gp/T/tmpZtV_DY/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1775 Jun 30 21:59 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Jun 30 21:59 ft_atoi
+drwxr-xr-x  3 deepthought  deepthought   102 Jun 30 21:59 ft_print_numbers
+drwxr-xr-x  3 deepthought  deepthought   102 Jun 30 21:59 ft_putstr
+drwxr-xr-x  3 deepthought  deepthought   102 Jun 30 21:59 ft_strcmp
+drwxr-xr-x  3 deepthought  deepthought   102 Jun 30 21:59 maff_alpha
+drwxr-xr-x  3 deepthought  deepthought   102 Jun 30 21:59 only_a
+
+/var/folders/84/vqy6zp8j1yz1d689y8m5l5ph0000gp/T/tmpZtV_DY/user/ft_atoi:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1279 Jun 30 21:59 ft_atoi.c
+
+/var/folders/84/vqy6zp8j1yz1d689y8m5l5ph0000gp/T/tmpZtV_DY/user/ft_print_numbers:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1027 Jun 30 21:59 ft_print_numbers.c
+
+/var/folders/84/vqy6zp8j1yz1d689y8m5l5ph0000gp/T/tmpZtV_DY/user/ft_putstr:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1013 Jun 30 21:59 ft_putstr.c
+
+/var/folders/84/vqy6zp8j1yz1d689y8m5l5ph0000gp/T/tmpZtV_DY/user/ft_strcmp:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1228 Jun 30 21:59 ft_strcmp.c
+
+/var/folders/84/vqy6zp8j1yz1d689y8m5l5ph0000gp/T/tmpZtV_DY/user/maff_alpha:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1335 Jun 30 21:59 maff_alpha.c
+
+/var/folders/84/vqy6zp8j1yz1d689y8m5l5ph0000gp/T/tmpZtV_DY/user/only_a:
+total 8
+-rw-r--r--  1 deepthought  deepthought  978 Jun 30 21:59 only_a.c
+ 
+= ft_atoi ======================================================================
+$> gcc -Wextra -Wall -Werror main.c ft_atoi.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./jnsliqfmuqodcwly556udsyg 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./vjii4592kw233jhrd55k2ow3 "21" "2313"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./ve5g6kwco9kxbugf1hceibwm 2147483647
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./c0aihxsutmkpy2u98hnvk8ns -2147483648
+$> diff -U 3 user_output_test4 test4.output | cat -e
+--- user_output_test4	2017-06-30 21:59:52.000000000 -0700$
++++ test4.output	2017-06-30 21:59:52.000000000 -0700$
+@@ -1 +1 @@$
+-0$
+\ No newline at end of file$
++-2147483648$
+\ No newline at end of file$
+
+Diff KO :(
+Grade: 0
+
+= Final grade: 0 ===============================================================

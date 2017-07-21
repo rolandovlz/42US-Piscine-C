@@ -1,0 +1,2 @@
+alias norm='norminette -R CheckForbiddenSourceHeader'
+alias compile='gcc -Wall -Wextra -Werror'

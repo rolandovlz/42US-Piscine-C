@@ -1,0 +1,5 @@
+Credentials cache: API:25182
+        Principal: rvelez@42.US.ORG
+
+  Issued                Expires               Principal
+Jun 26 11:12:20 2017  Jun 26 21:12:20 2017  krbtgt/42.US.ORG@42.US.ORG
