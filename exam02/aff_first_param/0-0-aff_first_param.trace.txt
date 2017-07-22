@@ -1,0 +1,87 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r7p6.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Fri Jul 14 18:15:04 PDT 2017
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/c++/4.2.1
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2017/piscine-c-exam02/exam_20170715/rvelez
+
+= Git history ==================================================================
+$> git -C /var/folders/q1/qjq4223128lfqvpkvc9311kc0000gp/T/tmpvLHsGH/user log --pretty='%H - %an, %ad : %s'
+acb3e0ebc3403ae3d7965aba41ccca3849980496 - Exam 42, Fri Jul 14 18:14:10 2017 -0700 : aff_first_param.c done
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/q1/qjq4223128lfqvpkvc9311kc0000gp/T/tmpvLHsGH/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  259 Jul 14 18:15 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Jul 14 18:15 aff_first_param
+
+/var/folders/q1/qjq4223128lfqvpkvc9311kc0000gp/T/tmpvLHsGH/user/aff_first_param:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1129 Jul 14 18:15 aff_first_param.c
+ 
+= aff_first_param ==============================================================
+$> gcc -Wextra -Wall -Werror aff_first_param.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./8vpc771mixrcv0st56wljr5t 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./sbqbmfr76q3pwct8h2vce5ah "QRTrPI1sbFgj"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./3u469tbuln41llrbz7fsjpva "ozAqg3spWSTVDLbX"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./vh3h7entgvuzlgeraognsbef "MCPkx LO Yp4kDlgViGm ySbcexvOs Rf ZVvd"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./jyb239qzunp791glr0m1et2d "or7bnSkTMXqi e OWzU4nXP6s3C iE 0 qepOAlk4a c x c7tl 9ZAozLuQBDRE n8hc pO9 IGUbR0 MsfKdlTqZaJ"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./3ai8s5yfub8z63jhfsc1cqai "VjKR3yO" "G5V" "ev" "B9kUNlhjH26Q" "PNguJGRKL" "P0I"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./wyt5e72sm703ja3xj2nis296 "J5m2g9TWECD" "x" "FJ1vpQUZq87H" "yRq9zQt4ocvG" "mOEeFkMAUP" "bi3A" "JdqoRHhN3WtM" "VEa2m" "pg0" "7rgyK9LmDj" "pi5FlvRqPVE" "tgiJ" "dVubfKP" "1YI" "c6"
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./fzy6wnkojao8yx2cb0m6qm4z "rTkIFe Z" "6dV" "T03dvYgqGbJu DyMWOLpaGnVu" "aNzyeKtAc" "PET" "9o1 nw dko2P6 luMBN" "b3NEUvclZrL fy2X3HSAtek YyS" "oY1D3MS XGhVZyfxUo F m0zg6BDopht" "isH vmI 52A"
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./oxnscj62479ho344fez5d6sw "0S6MJsov8z5f ws2g fsi5XSJ0HTM puBdGLghbaij" "iAqnELRast6 e6S Vl7Og" "APg LGZTKQ" "fb4R7Vsm8 f6" "LH9h8X Tl0AEaoftW pLJEBUvFR0A ONP06uqTJozl" "70 FO"
+$> diff -U 3 user_output_test9 test9.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

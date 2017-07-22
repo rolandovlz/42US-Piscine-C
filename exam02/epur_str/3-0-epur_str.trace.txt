@@ -1,0 +1,66 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r7p27.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Fri Jul 14 19:48:26 PDT 2017
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/c++/4.2.1
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2017/piscine-c-exam02/exam_20170715/rvelez
+
+= Git history ==================================================================
+$> git -C /var/folders/3g/9kzrr5p17qx4c1wp3hw3fw7w0000gp/T/tmp3rIFh0/user log --pretty='%H - %an, %ad : %s'
+ea533db732e37e40c9672bf61bdbf6aa44dcd51d - Exam 42, Fri Jul 14 19:48:09 2017 -0700 : epur_str.c done
+4feb61a6b4bfdc49df0650bf67b8e9cc209b5043 - Exam 42, Fri Jul 14 19:12:14 2017 -0700 : do_op.c done
+737d6408bd3c91f1c53e56e64a5c4c0961f94e16 - Exam 42, Fri Jul 14 18:48:38 2017 -0700 : search_and_replace.c done
+acb3e0ebc3403ae3d7965aba41ccca3849980496 - Exam 42, Fri Jul 14 18:14:10 2017 -0700 : aff_first_param.c done
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/3g/9kzrr5p17qx4c1wp3hw3fw7w0000gp/T/tmp3rIFh0/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1075 Jul 14 19:48 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Jul 14 19:48 aff_first_param
+drwxr-xr-x  4 deepthought  deepthought   136 Jul 14 19:48 do_op
+drwxr-xr-x  3 deepthought  deepthought   102 Jul 14 19:48 epur_str
+drwxr-xr-x  3 deepthought  deepthought   102 Jul 14 19:48 search_and_replace
+
+/var/folders/3g/9kzrr5p17qx4c1wp3hw3fw7w0000gp/T/tmp3rIFh0/user/aff_first_param:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1129 Jul 14 19:48 aff_first_param.c
+
+/var/folders/3g/9kzrr5p17qx4c1wp3hw3fw7w0000gp/T/tmp3rIFh0/user/do_op:
+total 16
+-rw-r--r--  1 deepthought  deepthought  1374 Jul 14 19:48 do_op.c
+-rw-r--r--  1 deepthought  deepthought   989 Jul 14 19:48 ft.h
+
+/var/folders/3g/9kzrr5p17qx4c1wp3hw3fw7w0000gp/T/tmp3rIFh0/user/epur_str:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1856 Jul 14 19:48 epur_str.c
+
+/var/folders/3g/9kzrr5p17qx4c1wp3hw3fw7w0000gp/T/tmp3rIFh0/user/search_and_replace:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1323 Jul 14 19:48 search_and_replace.c
+ 
+= epur_str =====================================================================
+$> gcc -Wextra -Wall -Werror epur_str.c -o user_exe 
+epur_str.c:74:7: error: unused variable 'c' [-Werror,-Wunused-variable]
+        char c;
+             ^
+1 error generated.
+
+Could not compile 'user_exe'
+Grade: 0
+
+= Final grade: 0 ===============================================================

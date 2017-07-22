@@ -1,0 +1,86 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z1r8p14.42.us.org
+Darwin 17.0.0 x86_64
+$> date
+Fri Jul 21 16:50:19 PDT 2017
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/c++/4.2.1
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin17.0.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin17.0.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2017/piscine-c-exam-final/exam_20170721/rvelez
+
+= Git history ==================================================================
+$> git -C /var/folders/h8/rdqkmlsd4d76s8jj4p02nqzh0000gp/T/tmp1nJXsy/user log --pretty='%H - %an, %ad : %s'
+663957675e635e419a9ee6e6fd13bd7cc1d4b7e7 - Exam 42, Fri Jul 21 16:50:12 2017 -0700 : missing matching brackets (only works when there's one set
+354c1eb557bfef6c3b21b2ed2bbc7dd02bb55aed - Exam 42, Fri Jul 21 14:35:33 2017 -0700 : unfinished
+9f537106544d53603fee77883777270b8e5591f0 - Exam 42, Fri Jul 21 12:25:44 2017 -0700 : ft_itoa.c
+deeb75b0b4f294b4108271666e4f790ce5745417 - Exam 42, Fri Jul 21 11:08:34 2017 -0700 : epur_str.c
+e2e63860c0a5e000cb0c2d916ed1ed5e6c41af5c - Exam 42, Fri Jul 21 10:44:45 2017 -0700 : alpha_mirror.c
+1702bb33e6d15bb56ab38db2306027c8592c7c3d - Exam 42, Fri Jul 21 10:11:52 2017 -0700 : ft_putstr.c
+7e15485e1164ed96b955ea309b2fc9f0b4438e92 - Exam 42, Fri Jul 21 10:07:22 2017 -0700 : aff_z.c
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/h8/rdqkmlsd4d76s8jj4p02nqzh0000gp/T/tmp1nJXsy/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1783 Jul 21 16:50 __GIT_HISTORY
+drwxr-xr-x  2 deepthought  deepthought   102 Jul 21 16:50 aff_z
+drwxr-xr-x  2 deepthought  deepthought   102 Jul 21 16:50 alpha_mirror
+drwxr-xr-x  2 deepthought  deepthought   102 Jul 21 16:50 brainfuck
+drwxr-xr-x  2 deepthought  deepthought   102 Jul 21 16:50 epur_str
+drwxr-xr-x  2 deepthought  deepthought   102 Jul 21 16:50 ft_itoa
+drwxr-xr-x  2 deepthought  deepthought   102 Jul 21 16:50 ft_putstr
+drwxr-xr-x  2 deepthought  deepthought   102 Jul 21 16:50 print_memory
+
+/var/folders/h8/rdqkmlsd4d76s8jj4p02nqzh0000gp/T/tmp1nJXsy/user/aff_z:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1010 Jul 21 16:50 aff_z.c
+
+/var/folders/h8/rdqkmlsd4d76s8jj4p02nqzh0000gp/T/tmp1nJXsy/user/alpha_mirror:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1938 Jul 21 16:50 alpha_mirror.c
+
+/var/folders/h8/rdqkmlsd4d76s8jj4p02nqzh0000gp/T/tmp1nJXsy/user/brainfuck:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1619 Jul 21 16:50 brainfuck.c
+
+/var/folders/h8/rdqkmlsd4d76s8jj4p02nqzh0000gp/T/tmp1nJXsy/user/epur_str:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1679 Jul 21 16:50 epur_str.c
+
+/var/folders/h8/rdqkmlsd4d76s8jj4p02nqzh0000gp/T/tmp1nJXsy/user/ft_itoa:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1828 Jul 21 16:50 ft_itoa.c
+
+/var/folders/h8/rdqkmlsd4d76s8jj4p02nqzh0000gp/T/tmp1nJXsy/user/ft_putstr:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1015 Jul 21 16:50 ft_putstr.c
+
+/var/folders/h8/rdqkmlsd4d76s8jj4p02nqzh0000gp/T/tmp1nJXsy/user/print_memory:
+total 8
+-rw-r--r--  1 deepthought  deepthought  2222 Jul 21 16:50 print_memory.c
+ 
+= brainfuck ====================================================================
+$> gcc -Wextra -Wall -Werror brainfuck.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./jfihawuopfx2k5fqgsshxz6u "++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>."
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./h6u6zrcw4noqojfz7ayn71es "+++++[>++sefs++[>++sef+dht+>+++++sfsfefijdgj<<-]>>>++efn<<<<-]>>esf-----sf---.>+++++.>."
+Command './h6u6zrcw4noqojfz7ayn71es "+++++[>++sefs++[>++sef+dht+>+++++sfsfefijdgj<<-]>>>++efn<<<<-]>>esf-----sf---.>+++++.>."' got killed by a Segmentation fault (Signal -11)
+Grade: 0
+
+= Final grade: 0 ===============================================================
